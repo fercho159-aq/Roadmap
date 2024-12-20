@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Python - Operadores y Estructuras de Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .output {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Python - Operadores y Estructuras de Control</h1>
+
+    <div class="section">
+        <h2>1. Operadores en Python</h2>
+        
+        <h3>Operadores Aritméticos</h3>
+        <div class="code-block">
+            <pre>
+# Operadores aritméticos
+a = 10
+b = 3
+
+print(f"Suma: {a + b}")         # 13
+print(f"Resta: {a - b}")        # 7
+print(f"Multiplicación: {a * b}")# 30
+print(f"División: {a / b}")      # 3.3333...
+print(f"División entera: {a // b}")  # 3
+print(f"Módulo: {a % b}")       # 1
+print(f"Exponente: {a ** b}")   # 1000
+            </pre>
+        </div>
+
+        <h3>Operadores de Comparación</h3>
+        <div class="code-block">
+            <pre>
+# Operadores de comparación
+x = 5
+y = 10
+
+print(f"Igual a: {x == y}")         # False
+print(f"Diferente de: {x != y}")    # True
+print(f"Mayor que: {x > y}")        # False
+print(f"Menor que: {x < y}")        # True
+print(f"Mayor o igual: {x >= y}")   # False
+print(f"Menor o igual: {x <= y}")   # True
+            </pre>
+        </div>
+
+        <h3>Operadores Lógicos</h3>
+        <div class="code-block">
+            <pre>
+# Operadores lógicos
+p = True
+q = False
+
+print(f"AND: {p and q}")    # False
+print(f"OR: {p or q}")      # True
+print(f"NOT: {not p}")      # False
+            </pre>
+        </div>
+
+        <h3>Operadores de Asignación</h3>
+        <div class="code-block">
+            <pre>
+# Operadores de asignación
+num = 5
+num += 3      # num = num + 3
+print(num)    # 8
+num -= 2      # num = num - 2
+print(num)    # 6
+num *= 2      # num = num * 2
+print(num)    # 12
+            </pre>
+        </div>
+
+        <h3>Operadores de Identidad y Pertenencia</h3>
+        <div class="code-block">
+            <pre>
+# Operadores de identidad
+lista1 = [1, 2, 3]
+lista2 = [1, 2, 3]
+lista3 = lista1
+
+print(f"lista1 is lista2: {lista1 is lista2}")       # False
+print(f"lista1 is lista3: {lista1 is lista3}")       # True
+
+# Operadores de pertenencia
+print(f"2 in lista1: {2 in lista1}")                 # True
+print(f"5 not in lista1: {5 not in lista1}")         # True
+            </pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Estructuras de Control</h2>
+
+        <h3>Estructuras Condicionales</h3>
+        <div class="code-block">
+            <pre>
+# if, elif, else
+edad = 18
+
+if edad < 13:
+    print("Eres un niño")
+elif edad < 20:
+    print("Eres un adolescente")
+else:
+    print("Eres un adulto")
+            </pre>
+        </div>
+
+        <h3>Estructuras Iterativas</h3>
+        <div class="code-block">
+            <pre>
+# Bucle for
+for i in range(3):
+    print(f"Iteración {i}")
+
+# Bucle while
+contador = 0
+while contador < 3:
+    print(f"Contador: {contador}")
+    contador += 1
+            </pre>
+        </div>
+
+        <h3>Manejo de Excepciones</h3>
+        <div class="code-block">
+            <pre>
+# try, except, else, finally
+try:
+    resultado = 10 / 0
+except ZeroDivisionError:
+    print("Error: División por cero")
+else:
+    print("La división se realizó correctamente")
+finally:
+    print("Este bloque siempre se ejecuta")
+            </pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Ejercicio Extra</h2>
+        <p>Programa que imprime números pares entre 10 y 55, excluyendo el 16 y múltiplos de 3:</p>
+        <div class="code-block">
+            <pre>
+# Solución al ejercicio extra
+for num in range(10, 56, 2):  # Incremento de 2 para obtener solo pares
+    if num != 16 and num % 3 != 0:
+        print(num, end=" ")
+# Salida: 10 14 20 22 26 28 32 34 38 40 44 46 50 52
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

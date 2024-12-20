@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos de Python</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .note {
+            background-color: #e1f5fe;
+            padding: 15px;
+            border-left: 4px solid #03a9f4;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fundamentos de Python</h1>
+
+        <div class="note">
+            <strong>URL Oficial de Python:</strong> <a href="https://www.python.org">https://www.python.org</a>
+        </div>
+
+        <h2>1. Comentarios en Python</h2>
+        <p>Python ofrece dos formas de crear comentarios:</p>
+        <pre>
+# Comentario de una línea
+
+"""
+Comentario de
+múltiples líneas
+usando triple comilla
+"""
+
+'''
+También se pueden usar
+comillas simples triples
+para comentarios multilinea
+'''</pre>
+
+        <h2>2. Variables y Constantes</h2>
+        <p>En Python, las variables se crean simplemente asignando un valor:</p>
+        <pre>
+# Variable
+nombre = "Python"
+
+# En Python no existen constantes verdaderas, pero
+# por convención se usan mayúsculas para indicar que
+# una variable debe tratarse como constante
+PI = 3.14159
+MAX_USUARIOS = 100</pre>
+
+        <h2>3. Tipos de Datos Primitivos</h2>
+        <p>Python tiene varios tipos de datos primitivos:</p>
+        <pre>
+# Strings (cadenas de texto)
+texto = "Hola Python"
+otro_texto = 'También con comillas simples'
+
+# Números enteros (int)
+edad = 25
+numero_negativo = -10
+
+# Números flotantes (float)
+precio = 19.99
+temperatura = -5.6
+
+# Booleanos (bool)
+es_verdadero = True
+es_falso = False
+
+# None (similar a null en otros lenguajes)
+valor_nulo = None
+
+# Complejos
+numero_complejo = 3 + 4j</pre>
+
+        <h2>4. Hola Mundo</h2>
+        <p>El clásico ejemplo "Hola Mundo" en Python:</p>
+        <pre>
+print("¡Hola, Python!")</pre>
+
+        <h2>Sintaxis Básica</h2>
+        <p>Características importantes de la sintaxis de Python:</p>
+        <ul>
+            <li>Python usa indentación para definir bloques de código</li>
+            <li>No se necesitan punto y coma al final de las líneas</li>
+            <li>Los bloques se definen con dos puntos (:)</li>
+        </ul>
+        <pre>
+# Ejemplo de sintaxis con un if
+if True:
+    print("La indentación es importante")
+    if True:
+        print("Otro nivel de indentación")
+print("Vuelta al nivel inicial")</pre>
+    </div>
+</body>
+</html>
